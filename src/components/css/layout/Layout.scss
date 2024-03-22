@@ -1,0 +1,170 @@
+@use "../variables";
+
+
+@media only screen and (max-width: 300px) { 
+  .email {
+    font-size: 0.85rem;
+  }
+}
+
+
+#dark body {
+  background-color: variables.$background-color-dark;
+}
+
+body {
+  transition: color, background-color 0.3s ease-out !important;
+}
+
+.body-sector {
+  transition: color, background-color 0.3s ease-out !important;
+}
+
+.navigation-sector {
+  transition: color, background-color 0.3s ease-out !important;
+}
+
+.footer {
+  transition: color, background-color 0.3s ease-out !important;
+}
+
+#light body {
+  background-color: variables.$background-color-light;
+}
+
+#light .body-sector {
+  color: variables.$main-color-light;
+  background-color: variables.$background-color-light;
+}
+
+#dark .body-sector {
+  color: variables.$main-color-dark;
+  background-color: variables.$background-color-dark;
+}
+
+#light .footer {
+  color: variables.$main-color-light;
+  background-color: variables.$background-color-light;
+}
+
+#dark .footer {
+  color: variables.$main-color-dark;
+  background-color: variables.$background-color-dark;
+}
+
+#light a {
+  color: variables.$main-color-light;
+}
+
+#light .highlight-text {
+  color: variables.$text-highlight-color-light;
+  font-weight: 700;
+}
+
+#light .navigation-sector {
+  background-color: variables.$background-color-light;
+}
+
+#dark a {
+  color: variables.$main-color-dark;
+}
+
+#dark .highlight-text {
+  color: variables.$text-highlight-color-dark;
+  font-weight: 700;
+}
+
+#dark .navigation-sector {
+  background-color: variables.$background-color-dark;
+}
+
+body {
+  margin: 0;
+
+  p {
+    font-weight: 400;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.highlight-text {
+  font-weight: variables.$text-highlight-weight;
+}
+
+.navigation-sector {
+  height: 64px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  vertical-align: middle;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body-sector {
+  margin-top: 64px;
+  left: 0;
+  top: 0;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+
+  .mainText {
+    font-size: variables.$desktop-title-size;
+    margin: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    text-wrap: wrap;
+    text-align: center;
+    font-size: variables.$desktop-font-size;
+    margin: 0;
+  }
+}
+
+
+@media only screen and (min-width: 750px) {
+  .body-sector {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  .footer {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+
+    .mainText {
+      font-size: variables.$desktop-title-size;
+      margin: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: variables.$desktop-font-size;
+    }
+  }
+}

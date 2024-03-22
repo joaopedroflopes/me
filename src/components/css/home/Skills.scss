@@ -1,0 +1,132 @@
+@use "../variables";
+
+#light .cto {
+  color: variables.$main-color-light;
+}
+
+#dark .cto {
+  color: variables.$main-color-dark;
+}
+
+.skills {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  overflow: auto;
+  align-items: flex-start;
+  margin: 1rem;
+  flex-direction: column;
+
+  p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: variables.$mobile-font-size;
+  }
+}
+
+.cto {
+  margin-top: 5px;
+  width: 100%;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0.25rem;
+    font-size: 1rem;
+  }
+}
+
+#light .graphList {
+  background-color: variables.$section-background-color-light;
+}
+
+#light .graphBar {
+  background-color: variables.$bar-color-light;
+}
+
+#dark .graphList {
+  background-color: variables.$section-background-color-dark;
+}
+
+#dark .graphBar {
+  background-color: variables.$bar-color-dark;
+}
+
+.graphList {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  overflow: auto;
+  align-items: flex-end;
+}
+
+.graphBar {
+  width: 35px;
+  margin-bottom: 8px;
+}
+
+.graphEntry {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  white-space: nowrap;
+  margin: 1rem;
+}
+
+.graphList::-webkit-scrollbar-thumb {
+  height: 1px;
+  border-radius: 10px;
+}
+
+.graphList::-webkit-scrollbar {
+  height: 3px;
+  width: 2px; /* Width of the scrollbar */
+}
+
+#dark .graphList::-webkit-scrollbar-track {
+  background: variables.$section-background-color-dark; /* Track color */
+}
+
+#dark .graphList::-webkit-scrollbar-thumb {
+  background: variables.$bar-color-dark; /* Thumb color */
+}
+
+#dark .graphList::-webkit-scrollbar-thumb:hover {
+  background: variables.$main-color-dark; /* Thumb color on hover */
+}
+
+#light .graphList::-webkit-scrollbar-track {
+  background: variables.$section-background-color-dark; /* Track color */
+}
+
+#light .graphList::-webkit-scrollbar-thumb {
+  background: variables.$bar-color-light; /* Thumb color */
+}
+
+#light .graphList::-webkit-scrollbar-thumb:hover {
+  background: variables.$scrollbar-color-light; /* Thumb color on hover */
+}
+
+@media only screen and (min-width: 750px) {
+  .skills {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 50%;
+    max-width: 50%;
+
+    p {
+      font-size: variables.$desktop-font-size;
+    }
+  }
+
+  .cto {
+    p {
+      font-weight: 200;
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@use "../variables";
+
+@media only screen and (max-width: 300px) { 
+  .hero {
+    p {
+      text-align: center;
+      font-size: 2rem!important;
+    }
+  }
+
+}
+
+.hero {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+.pic {
+  max-width: 100%;
+  width: 14rem;
+  min-width: 10rem;
+}
+
+@media only screen and (min-width: 750px) {
+  .hero {
+    width: 50%;
+    height: 20rem;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+
+    h1 {
+      text-align: start;
+    }
+  }
+
+}

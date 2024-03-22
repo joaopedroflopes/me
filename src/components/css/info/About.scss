@@ -1,0 +1,33 @@
+@use "../variables";
+
+.about {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  overflow: auto;
+  align-items: flex-start;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  flex-direction: column;
+  p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: variables.$mobile-font-size;
+    margin: 1px;
+  }
+
+  .spacing {
+    display: block;
+    margin: 100px 0;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .about {
+    width: 50%;
+
+    p {
+      font-size: variables.$desktop-font-size;
+    }
+  }
+}

@@ -1,0 +1,163 @@
+@use '../variables';
+
+.projects {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  overflow: auto;
+  align-items: flex-start;
+  margin: 1rem;
+  flex-direction: column;
+
+  p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: variables.$mobile-font-size;
+  }
+}
+
+.projectList {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#light .project {
+  border-color: variables.$border-color-light;
+  background-color: variables.$section-background-color-light;
+}
+
+#dark .project {
+  border-color: variables.$border-color-dark;
+  background-color: variables.$section-background-color-dark;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  border: 0;
+  border-top: 1px;
+  border-style: solid;
+  width: 100%;
+  height: 4rem;
+
+  h1 {
+    font-size: variables.$mobile-title-size;
+  }
+  p {
+    font-size: variables.$mobile-font-size;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.projectImg {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.projectSurf {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.surfrec-desktop {
+  display: none;
+}
+
+.surfrec-mobile {
+  border-radius: 10px;
+  width: 100%;
+  display: inline;
+}
+
+.projectText {
+
+  h {
+    margin: 0;
+  }
+
+  p {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .projects {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 50%;
+    max-width: 50%;
+
+    p {
+      font-size: variables.$desktop-font-size;
+    }
+  }
+
+  .projectText {
+    p {
+      display: block;
+    }
+  }
+
+  .project {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 0.5rem;
+    height: 6rem;
+    border: none;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    h1 {
+      font-size: variables.$desktop-title-size;
+      margin-top: 1rem;
+      margin-bottom: 0;
+    }
+    p {
+      font-size: variables.$desktop-font-size;
+      margin-top: 0rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .projectImg {
+    font-size: 3rem;
+  }
+
+  .projectSurf {
+    flex-direction: row;
+    p {
+      width: 75%;
+    }
+  }
+
+  .surfrec-mobile {
+    display: none;
+  }
+
+  .surfrec-anchor {
+    width: 20%;
+  }
+
+  .surfrec-desktop {
+    width: 100%;
+    display: inline;
+    border-radius: 10px;
+  }
+}

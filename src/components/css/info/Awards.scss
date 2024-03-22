@@ -1,0 +1,78 @@
+@use "../variables";
+
+#light .cto {
+  color: variables.$text-highlight-color-light;
+}
+
+#dark .cto {
+  color: variables.$text-highlight-color-dark;
+}
+
+.awards {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  overflow: auto;
+  align-items: flex-start;
+  margin: 1rem;
+
+  p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: variables.$mobile-font-size;
+  }
+
+  .spacing {
+    display: block;
+    margin: 100px 0;
+  }
+}
+
+.huawei-desktop {
+  display: none;
+}
+
+.huawei-mobile {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.cto {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0.25rem;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .awards {
+    width: 50%;
+    p {
+      font-size: variables.$desktop-font-size;
+    }
+  }
+
+  .huawei-mobile {
+    display: none;
+  }
+
+  .huawei-desktop {
+    display: block;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .cto {
+    p {
+      font-weight: 200;
+      font-size: 1rem;
+    }
+  }
+}
