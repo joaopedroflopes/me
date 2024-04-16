@@ -13,6 +13,7 @@
   padding: 0;
   display: flex;
   overflow: auto;
+  flex-wrap: wrap;
   align-items: flex-start;
   margin: 1rem;
   flex-direction: column;
@@ -58,7 +59,7 @@
 
 .graphList {
   width: 100%;
-  padding: 0;
+  padding-top: 1rem;
   display: flex;
   overflow: auto;
   align-items: flex-end;
@@ -70,11 +71,19 @@
 }
 
 .graphEntry {
+  width: 25%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-bottom: 1rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   white-space: nowrap;
-  margin: 1rem;
+
+  img {
+    height: 4rem;
+    padding-bottom: 0.25rem;
+  }
 }
 
 .graphList::-webkit-scrollbar-thumb {

@@ -1,13 +1,12 @@
 @use "../variables";
 
-@media only screen and (max-width: 300px) { 
+@media only screen and (max-width: 300px) {
   .hero {
     p {
       text-align: center;
-      font-size: 2rem!important;
+      font-size: 2rem !important;
     }
   }
-
 }
 
 .hero {
@@ -38,12 +37,11 @@
   .hero {
     width: 50%;
     height: 20rem;
-    display: grid;
-    grid-template-columns: 5fr 2fr;
+    flex-direction: row;
+    justify-content: space-between;
 
     h1 {
       text-align: start;
     }
   }
-
 }
