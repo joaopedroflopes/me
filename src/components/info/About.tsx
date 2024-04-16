@@ -5,7 +5,7 @@ import '../css/info/About.scss'
 import '../css/layout/Layout.scss'
 
 function About(): JSX.Element {
-    const cv = 'https://drive.google.com/file/d/1MPS40Zs466ZOytNOEtkpeVCXN5SaemN2/view?usp=sharing'
+    const cv = 'https://drive.google.com/file/d/1ldSLTyXM8c5NycK2Tnk-E_-9kki4b_vW/view?usp=sharing'
     return (
         <div className='about'>
             <div>
