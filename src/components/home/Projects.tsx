@@ -33,7 +33,7 @@ function Projects(): JSX.Element {
             </div>
             <div className='projectSurf'>
                 <p>
-                    I&apos;ve also been related to the project  <span className='highlight-text' > surfrec </span> for almost  <span className='highlight-text' > two years </span> , where I&apos;m responsible for developing the entire backend architecture! 🏄
+                    I&apos;ve also been related to the project  <span className='highlight-text' > surfrec </span> for almost  <span className='highlight-text' > two years</span>, where I&apos;m responsible for developing the entire backend architecture! 🏄
                 </p>
                 <a href={surfrec} target='_blank' rel='noreferrer'>
                     <img className='surfrec-mobile' alt='surfrec_logo' src={surfRecPic.src} />

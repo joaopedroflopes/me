@@ -3,7 +3,6 @@
 import React from 'react';
 import '../css/info/Awards.scss'
 import '../css/layout/Layout.scss'
-import Image from 'next/image';
 
 import huaweiMobile from '../../assets/huawei-mobile.png'
 import huaweiDesktop from '../../assets/huawei-desktop.png'
