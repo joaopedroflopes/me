@@ -5,7 +5,8 @@ import '../css/info/About.scss'
 import '../css/layout/Layout.scss'
 
 function About(): JSX.Element {
-    const cv = 'https://drive.google.com/file/d/1ldSLTyXM8c5NycK2Tnk-E_-9kki4b_vW/view?usp=sharing'
+    const cv = 'https://drive.google.com/file/d/1ItkjoLYpSfd8ERPoh7dIFYyQhPRzDBof/view?usp=sharing'
+    const linkedin = 'https://www.linkedin.com/in/joaopedroflopes'
     return (
         <div className='about'>
             <div>
@@ -17,7 +18,7 @@ function About(): JSX.Element {
                     <br /><br />
                     Apart from my academic journey, I&apos;ve also been a part of Orquestra Geração as a violinist for more than a decade now. I also love playing volleyball, and right now I play as member of my college second division team, which is also something I really love and hope I keep doing for a long time.
                     <br /><br />
-                    Also also, <span className='highlight-text'  > if you need it, </span> <a href={cv} target='_blank' rel='noreferrer'> here&apos;s my CV</a>.
+                    Also also, <span className='highlight-text'  > if you need it, </span> <a href={cv} target='_blank' rel='noreferrer'> here&apos;s my CV</a> and <a href={linkedin} target='_blank' rel='noreferrer'> LinkedIn</a>.
                 </p>
             </div>
         </div >
