@@ -12,7 +12,7 @@ import '../css/layout/Layout.scss'
 function Projects(): JSX.Element {
     const { mode, swap } = useContext(SystemContext);
 
-    var surfRecPic = surfrecLight
+    let surfRecPic = surfrecLight
     if (mode == 'dark') {
         surfRecPic = surfrecDark
     }
