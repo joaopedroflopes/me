@@ -8,8 +8,8 @@ import { SystemContext } from '../../app/context';
 import React, { createContext, useContext, useEffect } from 'react';
 
 function Navigation(): JSX.Element {
-    const home = '/home'
-    const about = '/about'
+    const home = 'home'
+    const about = 'about'
     const github = 'https://github.com/jplxpes'
     const linkedin = 'https://www.linkedin.com/in/joaopedroflopes/'
 

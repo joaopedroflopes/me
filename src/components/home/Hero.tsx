@@ -11,6 +11,13 @@ import '../css/layout/Layout.scss'
 function Hero(): JSX.Element {
 
     const { mode, swap } = useContext(SystemContext);
+    /*
+        let profilePic = logoLight
+        if (mode == 'dark') {
+            profilePic = logoDark
+        }
+    */
+
     return (
         <div className='hero'>
             <div>

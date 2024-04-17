@@ -58,7 +58,20 @@ function Skills(): JSX.Element {
                 <Bar img={go} name={'Golang'} />
                 <Bar img={js} name={'Javascript'} />
                 <Bar img={c} name={'C'} />
-
+                <Bar img={kt} name={'Kotlin'} />
+                <Bar img={android} name={'Android'} />
+                <Bar img={node} name={'NodeJS'} />
+                <Bar img={react} name={'React'} />
+                <Bar img={java} name={'Java'} />
+                <Bar img={next} name={'NextJS'} />
+                <Bar img={postgres} name={'PostgreSQL'} />
+                <Bar img={cS} name={'C#'} />
+                <Bar img={maria} name={'MariaDB'} />
+                <Bar img={figma} name={'Figma'} />
+                <Bar img={css} name={'CSS'} />
+                <Bar img={linux} name={'Linux'} />
+                <Bar img={elasticSearch} name={'Elastic'} />
+                <Bar img={html} name={'HTML'} />
             </div>
             <div className='cto'>
                 <p> scroll me </p>
