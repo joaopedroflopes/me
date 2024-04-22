@@ -32,3 +32,5 @@ export const linuxImg = require('../../assets/icons/linux.png');
 export const linuxDarkImg = require('../../assets/icons/linux-dark.png');
 export const figmaImg = require('../../assets/icons/figma.png');
 export const figmaDarkImg = require('../../assets/icons/figma-dark.png');
+export const typescriptImg = require('../../assets/icons/typescript.png');
+export const typescriptDarkImg = require('../../assets/icons/typescript-dark.png');

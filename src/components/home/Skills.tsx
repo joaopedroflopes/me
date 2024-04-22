@@ -20,6 +20,7 @@ import {
     elasticSearchImg, elasticSearchDarkImg,
     linuxImg, linuxDarkImg,
     figmaImg, figmaDarkImg,
+    typescriptImg, typescriptDarkImg,
 } from './Images'
 
 
@@ -48,6 +49,7 @@ function Skills(): JSX.Element {
     let elasticSearch = elasticSearchImg
     let linux = linuxImg
     let figma = figmaImg
+    let typescript = typescriptImg
 
     if (mode == 'dark') {
         android = androidDarkImg
@@ -67,6 +69,7 @@ function Skills(): JSX.Element {
         elasticSearch = elasticSearchDarkImg
         linux = linuxDarkImg
         figma = figmaDarkImg
+        typescript = typescriptDarkImg
     }
 
     return (
@@ -83,6 +86,7 @@ function Skills(): JSX.Element {
                 <Bar img={android.default} name={'Android'} />
                 <Bar img={node.default} name={'NodeJS'} />
                 <Bar img={react.default} name={'React'} />
+                <Bar img={typescript.default} name={'Typescript'} />
                 <Bar img={java.default} name={'Java'} />
                 <Bar img={next.default} name={'NextJS'} />
                 <Bar img={postgres.default} name={'PostgreSQL'} />
