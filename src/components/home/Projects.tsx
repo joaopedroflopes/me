@@ -23,7 +23,7 @@ function Projects(): JSX.Element {
             <div>
                 <h1> Projects </h1>
                 <p>
-                    Here are some  <span className='highlight-text'  > finished </span> projects that I made on my free time. While there are many other projects that I&apos;ve started, but most end up never seeing the light of day, because sometimes I start them with a simple idea and then end up inventing new things to the point of no return (like this website)
+                    Here are some  <span className='highlight-text'  > finished </span> projects that I made on my free time. While there are many other projects that I&apos;ve started, most end up never seeing the light of day or are just too complex to show here
                 </p>
             </div>
             <div className='projectList'>
@@ -33,7 +33,7 @@ function Projects(): JSX.Element {
             </div>
             <div className='projectSurf'>
                 <p>
-                    I&apos;ve also been related to the project  <span className='highlight-text' > surfrec </span> for almost  <span className='highlight-text' > two years</span>, where I&apos;m responsible for developing the entire backend architecture! 🏄
+                    I&apos;ve also been related to the project  <span className='highlight-text' > surfrec </span> for  <span className='highlight-text' > two years</span>, where I was responsible for developing the entire backend architecture! 🏄
                 </p>
                 <a href={surfrec} target='_blank' rel='noreferrer'>
                     <img className='surfrec-mobile' alt='surfrec_logo' src={surfRecPic.src} />
